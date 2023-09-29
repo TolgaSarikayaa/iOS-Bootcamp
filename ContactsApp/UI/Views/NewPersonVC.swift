@@ -24,7 +24,13 @@ class NewPersonVC: UIViewController {
     
 
     @IBAction func save(_ sender: Any) {
-        
+        if let pn = newPersonName.text, let pt = newPersonTel.text {
+            savePerson(peron_name: pn, person_tel: pt)
+        }
+    }
+    
+    func savePerson(peron_name: String, person_tel: String) {
+        print("Save Person: \(peron_name) - \(person_tel)")
     }
     
 
