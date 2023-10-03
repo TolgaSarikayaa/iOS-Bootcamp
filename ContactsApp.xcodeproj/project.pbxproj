@@ -20,6 +20,14 @@
 		14FDED902AC6E6A9004E6507 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDED8F2AC6E6A9004E6507 /* PersonCell.swift */; };
 		14FDED952AC6E719004E6507 /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDED942AC6E719004E6507 /* Persons.swift */; };
 		14FDED972AC6E838004E6507 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDED962AC6E838004E6507 /* HomePageVC.swift */; };
+		14FDEDC62AC8C22E004E6507 /* PersonsDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEDC52AC8C22E004E6507 /* PersonsDaoRepository.swift */; };
+		14FDEDC92AC8C413004E6507 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 14FDEDC82AC8C413004E6507 /* RxSwift */; };
+		14FDEDCC2AC8C477004E6507 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEDCB2AC8C477004E6507 /* HomePageViewModel.swift */; };
+		14FDEDCE2AC8C4D4004E6507 /* NewPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEDCD2AC8C4D4004E6507 /* NewPersonViewModel.swift */; };
+		14FDEDD02AC8C4F3004E6507 /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEDCF2AC8C4F3004E6507 /* PersonDetailViewModel.swift */; };
+		14FDEE022ACC3785004E6507 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 14FDEE012ACC3785004E6507 /* Alamofire */; };
+		14FDEE042ACC3DA1004E6507 /* CRUDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEE032ACC3DA1004E6507 /* CRUDResponse.swift */; };
+		14FDEE062ACC3E82004E6507 /* PersonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDEE052ACC3E82004E6507 /* PersonsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,12 @@
 		14FDED8F2AC6E6A9004E6507 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		14FDED942AC6E719004E6507 /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
 		14FDED962AC6E838004E6507 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		14FDEDC52AC8C22E004E6507 /* PersonsDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDaoRepository.swift; sourceTree = "<group>"; };
+		14FDEDCB2AC8C477004E6507 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		14FDEDCD2AC8C4D4004E6507 /* NewPersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonViewModel.swift; sourceTree = "<group>"; };
+		14FDEDCF2AC8C4F3004E6507 /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
+		14FDEE032ACC3DA1004E6507 /* CRUDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CRUDResponse.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/ContactsApp/ContactsApp/UI/tableViews/Data/Entity/CRUDResponse.swift"; sourceTree = "<group>"; };
+		14FDEE052ACC3E82004E6507 /* PersonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FDEDC92AC8C413004E6507 /* RxSwift in Frameworks */,
+				14FDEE022ACC3785004E6507 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +107,7 @@
 				14FDED6E2AC6DF69004E6507 /* ContactsAppTests */,
 				14FDED782AC6DF69004E6507 /* ContactsAppUITests */,
 				14FDED562AC6DF68004E6507 /* Products */,
+				14FDEDC72AC8C413004E6507 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +124,6 @@
 		14FDED572AC6DF68004E6507 /* ContactsApp */ = {
 			isa = PBXGroup;
 			children = (
-				14FDED912AC6E6DF004E6507 /* Data */,
 				14FDED582AC6DF68004E6507 /* AppDelegate.swift */,
 				14FDED5A2AC6DF68004E6507 /* SceneDelegate.swift */,
 				14FDED8C2AC6E652004E6507 /* UI */,
@@ -139,6 +155,7 @@
 		14FDED8C2AC6E652004E6507 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				14FDEDCA2AC8C456004E6507 /* viewModel */,
 				14FDED8E2AC6E675004E6507 /* Views */,
 				14FDED8D2AC6E663004E6507 /* tableViews */,
 			);
@@ -149,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				14FDED8F2AC6E6A9004E6507 /* PersonCell.swift */,
+				14FDED912AC6E6DF004E6507 /* Data */,
 			);
 			path = tableViews;
 			sourceTree = "<group>";
@@ -166,6 +184,7 @@
 		14FDED912AC6E6DF004E6507 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				14FDEDC42AC8C1EF004E6507 /* repo */,
 				14FDED932AC6E6FE004E6507 /* Entity */,
 			);
 			path = Data;
@@ -175,8 +194,35 @@
 			isa = PBXGroup;
 			children = (
 				14FDED942AC6E719004E6507 /* Persons.swift */,
+				14FDEE032ACC3DA1004E6507 /* CRUDResponse.swift */,
+				14FDEE052ACC3E82004E6507 /* PersonsResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		14FDEDC42AC8C1EF004E6507 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				14FDEDC52AC8C22E004E6507 /* PersonsDaoRepository.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		14FDEDC72AC8C413004E6507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14FDEDCA2AC8C456004E6507 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14FDEDCB2AC8C477004E6507 /* HomePageViewModel.swift */,
+				14FDEDCD2AC8C4D4004E6507 /* NewPersonViewModel.swift */,
+				14FDEDCF2AC8C4F3004E6507 /* PersonDetailViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +241,10 @@
 			dependencies = (
 			);
 			name = ContactsApp;
+			packageProductDependencies = (
+				14FDEDC82AC8C413004E6507 /* RxSwift */,
+				14FDEE012ACC3785004E6507 /* Alamofire */,
+			);
 			productName = ContactsApp;
 			productReference = 14FDED552AC6DF68004E6507 /* ContactsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +317,10 @@
 				Base,
 			);
 			mainGroup = 14FDED4C2AC6DF68004E6507;
+			packageReferences = (
+				14FDEDC32AC8C164004E6507 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				14FDEE002ACC3785004E6507 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 14FDED562AC6DF68004E6507 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,8 +366,14 @@
 			files = (
 				14FDED902AC6E6A9004E6507 /* PersonCell.swift in Sources */,
 				14FDED952AC6E719004E6507 /* Persons.swift in Sources */,
+				14FDEE042ACC3DA1004E6507 /* CRUDResponse.swift in Sources */,
+				14FDEDCC2AC8C477004E6507 /* HomePageViewModel.swift in Sources */,
 				14FDED8B2AC6E634004E6507 /* PersonDetayVC.swift in Sources */,
+				14FDEDC62AC8C22E004E6507 /* PersonsDaoRepository.swift in Sources */,
+				14FDEDD02AC8C4F3004E6507 /* PersonDetailViewModel.swift in Sources */,
+				14FDEE062ACC3E82004E6507 /* PersonsResponse.swift in Sources */,
 				14FDED592AC6DF68004E6507 /* AppDelegate.swift in Sources */,
+				14FDEDCE2AC8C4D4004E6507 /* NewPersonViewModel.swift in Sources */,
 				14FDED972AC6E838004E6507 /* HomePageVC.swift in Sources */,
 				14FDED892AC6E610004E6507 /* NewPersonVC.swift in Sources */,
 				14FDED5B2AC6DF68004E6507 /* SceneDelegate.swift in Sources */,
@@ -506,6 +566,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,6 +595,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,6 +725,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14FDEDC32AC8C164004E6507 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		14FDEE002ACC3785004E6507 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14FDEDC82AC8C413004E6507 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14FDEDC32AC8C164004E6507 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		14FDEE012ACC3785004E6507 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14FDEE002ACC3785004E6507 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14FDED4D2AC6DF68004E6507 /* Project object */;
 }

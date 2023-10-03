@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Person {
-    var person_id:Int?
+class Person : Codable {
+    var person_id:String?
     var person_ad:String?
     var person_tel:String?
     
@@ -16,7 +16,7 @@ class Person {
         
     }
     
-    init(person_id: Int, person_ad: String, person_tel: String) {
+    init(person_id: String, person_ad: String, person_tel: String) {
         self.person_id = person_id
         self.person_ad = person_ad
         self.person_tel = person_tel

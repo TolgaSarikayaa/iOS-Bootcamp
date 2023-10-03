@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class PersonDetayVC: UIViewController {
 
     
@@ -15,6 +17,8 @@ class PersonDetayVC: UIViewController {
     @IBOutlet weak var personTel: UITextField!
     
     var person: Person?
+    
+    var viewModel = PersonDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +32,9 @@ class PersonDetayVC: UIViewController {
     
     @IBAction func update(_ sender: Any) {
         if let pn = personName.text, let pt = personTel.text, let p = person {
-            updatePerson(person_id: p.person_id!, person_name: pn, person_tel: pt)
+            viewModel.updatePerson(person_id: Int(p.person_id!)!, person_name: pn, person_tel: pt)
         }
     }
     
-    func updatePerson(person_id: Int, person_name: String, person_tel: String) {
-        print("Update Person : \(person_id) - \(person_name) - \(person_tel)")
-    }
-
+    
 }
